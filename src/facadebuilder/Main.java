@@ -1,4 +1,4 @@
-package com.company.facadebuilder;
+package facadebuilder;
 
 public class Main {
 
