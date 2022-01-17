@@ -1,6 +1,6 @@
-package Factory;
+package factory;
 
-import Factory.method.Point;
+import factory.method.Point;
 
 public class Main {
     public static void main(String[] args) {
