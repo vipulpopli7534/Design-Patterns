@@ -1,5 +1,7 @@
 package factory;
 
+import factory.abstractfactory.HotDrink;
+import factory.abstractfactory.Machine;
 import factory.method.Point;
 import factory.method.PointWithFactory;
 
@@ -12,5 +14,14 @@ public class Main {
         //Factory
         PointWithFactory pointWithFactory = PointWithFactory.Factory.newCartesianPoint(10, 20);
         System.out.println(pointWithFactory);
+
+        //Abstract Factory
+        Machine machine = new Machine();
+        HotDrink tea = machine.makeDrink("Tea");
+        tea.consume();
+        HotDrink coffee = machine.makeDrink("Coffee");
+        coffee.consume();
+        HotDrink soda = machine.makeDrink("Soda");
+        soda.consume();
     }
 }
